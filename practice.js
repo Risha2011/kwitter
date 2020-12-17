@@ -1,18 +1,17 @@
-
 // ADD YOUR FIREBASE LINKS
+var firebaseConfig = {
+  apiKey: "AIzaSyA2HYOAo2qBtyWuLScnZvP2KwX0nWCE_ls",
+  authDomain: "kwitterapp-e930a.firebaseapp.com",
+  databaseURL: "https://kwitterapp-e930a.firebaseio.com",
+  projectId: "kwitterapp-e930a",
+  storageBucket: "kwitterapp-e930a.appspot.com",
+  messagingSenderId: "617827721711",
+  appId: "1:617827721711:web:a6898e63a3ad1feac4161a",
+  measurementId: "G-BLKN0RH2ZC"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyDUtdv0AMNkrFiqqQABAL5tVXJg2gW51To",
-    authDomain: "kwitter-9c647.firebaseapp.com",
-    projectId: "kwitter-9c647",
-    storageBucket: "kwitter-9c647.appspot.com",
-    messagingSenderId: "658320851542",
-    appId: "1:658320851542:web:205a190f11c2da7e0ab1f7"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  
 function addUser()
 {
   user_name = document.getElementById("user_name").value;
@@ -20,5 +19,3 @@ function addUser()
     purpose : "adding user"
   });
 }
-
-
